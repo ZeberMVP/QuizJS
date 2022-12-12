@@ -1,17 +1,176 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>HTML5 Template</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="author" content="TheBridge">
-    <meta name="description" content="Plantilla simple HTML5">
+    <meta name="author" content="Rubén Zafra Calzado">
+    <meta name="description" content="Cuestionario sobre JavaScript">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed&family=Rubik+80s+Fade&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
     <script defer src="scripts.js"></script>
 </head>
+
 <body>
-    
+    <header>
+        JAVASCRIPT QUIZ
+    </header>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>¿En qué año apareció JavaScript?</legend>
+                <label for="1997-field"></label>
+                <input id="1997-field" type="radio" name="1997-field" value="1997">
+
+                <label for="1995-field"></label>
+                <input id="1995-field" type="radio" name="1995-field" value="1995">
+
+                <label for="2002-field"></label>
+                <input id="2002-field" type="radio" name="2002-field" value="2002">
+
+                <label for="2011-field"></label>
+                <input id="2011-field" type="radio" name="2011-field" value="2011">
+            </fieldset>
+            <fieldset>
+                <legend>¿Quién inventó el lenguaje JavaScript?</legend>
+                <label for="Markus Persson-field"></label>
+                <input id="Markus Persson-field" type="radio" name="Markus Persson-field" value="Markus Persson">
+
+                <label for="Guido van Rossum-field"></label>
+                <input id="Guido van Rossum-field" type="radio" name="Guido van Rossum-field" value="Guido van Rossum">
+
+                <label for="Brendan Eich-field"></label>
+                <input id="Brendan Eich-field" type="radio" name="Brendan Eich-field" value="Brendan Eich">
+
+                <label for="Steve Wozniak-field"></label>
+                <input id="Steve Wozniak-field" type="radio" name="Steve Wozniak-field" value="Steve Wozniak">
+            </fieldset>
+            <fieldset>
+                <legend>¿Cuál es el estándar actual de JavaScript?</legend>
+                <label for="ECMAScript 4-field"></label>
+                <input id="ECMAScript 4-field" type="radio" name="ECMAScript 4-field" value="ECMAScript 4">
+
+                <label for="ECMAScript 5-field"></label>
+                <input id="ECMAScript 5-field" type="radio" name="ECMAScript 5-field" value="ECMAScript 5">
+
+                <label for="ECMAScript 6-field"></label>
+                <input id="ECMAScript 6-field" type="radio" name="ECMAScript 6-field" value="ECMAScript 6">
+
+                <label for="ECMAScript 7-field"></label>
+                <input id="ECMAScript 7-field" type="radio" name="ECMAScript 7-field" value="ECMAScript 7">
+            </fieldset>
+            <fieldset>
+                <legend>¿Bajo que organización se encuentra oficialmente JavaScript?</legend>
+                <label for="Mozilla Foundation-field"></label>
+                <input id="Mozilla Foundation-field" type="radio" name="Mozilla Foundation-field"
+                    value="Mozilla Foundation">
+
+                <label for="Open Source Initiative-field"></label>
+                <input id="Open Source Initiative-field" type="radio" name="Open Source Initiative-field" value="Open Source Initiative">
+
+                <label for="Apache Software Foundation-field"></label>
+                <input id="Apache Software Foundation-field" type="radio" name="Apache Software Foundation-field" value="Apache Software Foundation">
+
+                <label for="Free Software Foundation-field"></label>
+                <input id="Free Software Foundation-field" type="radio" name="Free Software Foundation-field" value="Free Software Foundation">
+            </fieldset>
+            <fieldset>
+                <legend>¿Cuál es el typeof de NaN?</legend>
+                <label for="Number-field"></label>
+                <input id="Number-field" type="radio" name="Number-field" value="Number">
+
+                <label for="String-field"></label>
+                <input id="String-field" type="radio" name="String-field" value="String">
+
+                <label for="null-field"></label>
+                <input id="null-field" type="radio" name="null-field" value="null">
+
+                <label for="undefined-field"></label>
+                <input id="undefined-field" type="radio" name="undefined-field" value="undefined">
+            </fieldset>
+            <fieldset>
+                <legend>¿Cuál de los siguientes no es un framework de JavaScript?</legend>
+                <label for="Angular-field"></label>
+                <input id="Angular-field" type="radio" name="Angular-field" value="Angular">
+
+                <label for="Vue-field"></label>
+                <input id="Vue-field" type="radio" name="Vue-field" value="Vue">
+
+                <label for="Svelte-field"></label>
+                <input id="Svelte-field" type="radio" name="Svelte-field" value="Svelte">
+
+                <label for="Laravel-field"></label>
+                <input id="Laravel-field" type="radio" name="Laravel-field" value="Laravel">
+            </fieldset>
+            <fieldset>
+                <legend>¿Qué empresa tiene registrada la marca JavaScript?</legend>
+                <label for="Oracle-field"></label>
+                <input id="Oracle-field" type="radio" name="Oracle-field" value="Oracle">
+
+                <label for="Meta-field"></label>
+                <input id="Meta-field" type="radio" name="Meta-field" value="Meta">
+
+                <label for="Google-field"></label>
+                <input id="Google-field" type="radio" name="Google-field" value="Google">
+
+                <label for="IBM-field"></label>
+                <input id="IBM-field" type="radio" name="IBM-field" value="IBM">
+            </fieldset>
+            <fieldset>
+                <legend>¿Cuál fue el primer nombre de JavaScript?</legend>
+                <label for="TypeScript-field"></label>
+                <input id="TypeScript-field" type="radio" name="TypeScript-field" value="TypeScript">
+
+                <label for="LiveScript-field"></label>
+                <input id="LiveScript-field" type="radio" name="LiveScript-field" value="LiveScript">
+
+                <label for="Mocha-field"></label>
+                <input id="Mocha-field" type="radio" name="Mocha-field" value="Mocha">
+
+                <label for="ECMAScript-field"></label>
+                <input id="ECMAScript-field" type="radio" name="ECMAScript-field" value="ECMAScript">
+            </fieldset>
+            <fieldset>
+                <legend>¿Cuánto tiempo tardo en desarrollarse la primera versión de JavaScript?</legend>
+                <label for="2 años-field"></label>
+                <input id="2 años-field" type="radio" name="2 años-field" value="2 años">
+
+                <label for="10 días-field"></label>
+                <input id="10 días-field" type="radio" name="10 días-field" value="10 días">
+
+                <label for="4 meses-field"></label>
+                <input id="4 meses-field" type="radio" name="4 meses-field" value="4 meses">
+
+                <label for="10 meses-field"></label>
+                <input id="10 meses-field" type="radio" name="10 meses-field" value="10 meses">
+            </fieldset>
+            <fieldset>
+                <legend>¿Cuánto es 0.1 + 0.2 en JavaScript?</legend>
+                <label for="0.3-field"></label>
+                <input id="0.3-field" type="radio" name="0.3-field" value="0.3">
+
+                <label for="0.12-field"></label>
+                <input id="0.12-field" type="radio" name="0.12-field" value="0.12">
+
+                <label for="NaN-field"></label>
+                <input id="NaN-field" type="radio" name="NaN-field" value="NaN">
+
+                <label for="0.30000000000000004-field"></label>
+                <input id="0.30000000000000004-field" type="radio" name="0.30000000000000004-field"
+                    value="0.30000000000000004">
+            </fieldset>
+
+            <button type="submit">Comprobar respuestas</button>
+        </form>
+    </main>
 </body>
+
 </html>
