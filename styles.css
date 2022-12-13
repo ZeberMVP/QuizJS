@@ -1,7 +1,17 @@
+:root {
+    --Jet: #2c2c2c;
+    --OrangeYellow: #efbc00;
+}
+
+body {
+    background-color: var(--OrangeYellow);
+}
 header {
     font-family: 'Rubik 80s Fade', cursive;
-    font-size: 2em;
+    font-size: 3em;
     margin: 6%;
+    color: var(--Jet);
+    font-weight: bold;
 }
 
 legend {
@@ -25,4 +35,6 @@ fieldset {
     flex-direction: column;
     align-items: center;
     margin: 3%;
+    color: var(--Jet);
 }
+
