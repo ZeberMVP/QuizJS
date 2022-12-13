@@ -140,4 +140,33 @@ preguntas.forEach(element => {
 
 let button = document.createElement("button");
 button.setAttribute("type", "submit");
+button.innerText = "Enviar respuestas";
 form.appendChild(button);
+
+
+//Validación
+
+document.querySelector("form").addEventListener("submit", function (event) {
+
+    event.preventDefault();
+    let fieldsets = document.querySelectorAll("fieldset");
+    let validated = false;
+    for (element of fieldsets){
+        let radios = element.querySelectorAll("input[type=\"radio\"]");
+        for (rad of radios){
+            if (rad.checked){
+                validated = true;
+                break;
+            } else {
+                validated = false;
+            }
+        }
+    }
+
+    if (validated) {
+        alert("ÉXITO - Formulario correcto y enviado");
+        event.target.submit();
+    } else {
+        alert("Por favor, revisa que has marcado todas las respuestas");
+    }
+})
