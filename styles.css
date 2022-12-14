@@ -1,3 +1,77 @@
+:root {
+    --Jet: #2c2c2c;
+    --OrangeYellow: #efbc00;
+}
+
 body {
-    background-color: ghostwhite;
+    background-color: var(--OrangeYellow);
+}
+header {
+    font-family: 'Rubik 80s Fade', cursive;
+    font-size: 3em;
+    margin: 6%;
+    color: var(--Jet);
+    font-weight: bold;
+}
+
+legend, button {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5em;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+header, legend {
+    text-align: center;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+    color: var(--Jet);
+}
+input[type="radio"] {
+    transform: scale(1.5);
+    transform-origin: center;
+  }
+button {
+    border-radius: 30px;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        font-size: 4em;
+    }
+    legend, button {
+        font-size: 1.8em;
+    }
+    label {
+        font-size: 1.5em;
+    }
+
+}
+
+@media screen and (min-width: 1366px) {
+    header {
+        font-size: 5em;
+    }
+    legend, button {
+        font-size: 2.3em;
+    }
+    label {
+        font-size: 2em;
+    }
+    button {
+        width: 60%;
+        margin: 5% 0 20% 20%;
+    }
 }
