@@ -18,10 +18,10 @@ const preguntas = [
     {
         nombre: "estándar",
         pregunta: "¿Cuál es el estándar actual de JavaScript?",
-        respuesta1: "ECMAScript 4",
-        respuesta2: "ECMAScript 5",
-        respuesta3: "ECMAScript 6",
-        respuesta4: "ECMAScript 7"
+        respuesta1: "ECMAScript 6",
+        respuesta2: "ECMAScript 2016",
+        respuesta3: "ECMAScript 7",
+        respuesta4: "ECMAScript 2022"
     },
     {
         nombre: "organización",
@@ -69,7 +69,7 @@ const preguntas = [
         respuesta1: "2 años",
         respuesta2: "10 días",
         respuesta3: "4 meses",
-        respuesta4: "10 meses"
+        respuesta4: "7 meses"
     },
     {
         nombre: "suma",
@@ -80,8 +80,9 @@ const preguntas = [
         respuesta4: "0.30000000000000004"
     }
 ]
-let main = document.querySelector("main");
-let form = document.createElement("form");
+const correctas = ["1995", "Brendan Eich", "ECMAScript 2022", "Mozilla Foundation", "Number", "Laravel", "Oracle", "Mocha", "10 días", "0.30000000000000004"]
+const main = document.querySelector("main");
+const form = document.createElement("form");
 main.appendChild(form);
 preguntas.forEach(element => {
     let fieldset = document.createElement("fieldset");
@@ -138,7 +139,7 @@ preguntas.forEach(element => {
 
 });
 
-let button = document.createElement("button");
+const button = document.createElement("button");
 button.setAttribute("type", "submit");
 button.innerText = "Enviar respuestas";
 form.appendChild(button);
@@ -151,11 +152,15 @@ document.querySelector("form").addEventListener("submit", function (event) {
     event.preventDefault();
     let fieldsets = document.querySelectorAll("fieldset");
     let validated = false;
+    let aciertos = 0;
     for (element of fieldsets){
         let radios = element.querySelectorAll("input[type=\"radio\"]");
         for (rad of radios){
             if (rad.checked){
                 validated = true;
+                if (correctas.includes(rad.value)){
+                    aciertos++
+                }
                 break;
             } else {
                 validated = false;
@@ -163,9 +168,10 @@ document.querySelector("form").addEventListener("submit", function (event) {
         }
     }
 
-    if (validated) {
-        alert("ÉXITO - Formulario correcto y enviado");
-        event.target.submit();
+    if (validated && aciertos === 10) {
+        alert("¡ENHORABUENA, TODAS LAS RESPUESTAS SON CORRECTAS!");
+    } else if (validated  && aciertos < 10) {
+        alert("Has tenido " + aciertos + " respuestas correctas")
     } else {
         alert("Por favor, revisa que has marcado todas las respuestas");
     }
