@@ -1,4 +1,4 @@
-Para ver directamente el resultado, acceder a la siguiente url:
+Para ver directamente el resultado, acceder a la siguiente url: https://zebermvp.github.io/QuizJS/
   
 Este es un sencillo quiz sobre el lenguaje de programación JavaScript, con el que también se ha creado. El cuestionario cuenta con diez preguntas y sus respectivas
 cuatro respuestas. Cada pregunta tiene una única respuesta correcta. Sólo se puede marcar una respuesta por pregunta. Hay que responder a todas las preguntas. Al final
